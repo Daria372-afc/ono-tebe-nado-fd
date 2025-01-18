@@ -1,1 +1,373 @@
 /* место для вашего кода */
+
+  .header {
+    margin: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 92px;
+    margin-bottom: 96px;
+    display: grid;
+    grid-template-columns: 427px 334px 294px;
+    align-items:center;
+  }
+
+
+  .header_logo {
+    display: flex;
+  }
+
+  .header_logo-image {
+    width: 146.05px;
+    height: 104.84px;
+  }
+
+  .header_links-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .header_links-list-item {
+    list-style-type: circle;
+  }
+
+  .header__links-list-item_no-bullit {
+    list-style: none;
+  }
+
+  .header_link {
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.13px;
+  }
+
+  .header_link_active {
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  .header_address {
+    width: 240px;
+    height: 98px;
+  }
+
+  .address_info {
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.3px;
+  }
+
+  .address_info_text {
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.3px;
+  }
+
+  /*Cover*/
+
+  .cover {
+    height: 91vh;
+    background-image: url(/first-project/ono-tebe-nado-fd/images/cover.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    margin-bottom: 180px;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.6);
+  }
+
+  .cover_title {
+    color: #fff;
+    font-family: Raleway;
+    font-weight: 700;
+    width: 100%;
+    font-size: 100px;
+    line-height: 129px;
+    padding-top: 168px;
+    padding-left: 50px;
+    padding-right: 54px;
+    word-spacing: 6px;
+  }
+
+  .aligned-text {
+    display: block;
+  }
+
+  .aligned-text_center {
+    text-align: center;
+  }
+
+  .aligned-text_right {
+    text-align: right;
+  }
+
+  .cover_description {
+    color: #fff;
+    padding-left: 50px;
+    margin-top: 106px;
+  }
+
+  .cover_description-text {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    display: inline;
+    word-spacing:18px;
+    padding-right: 106px;
+  }
+
+  .bet-button {
+    display: inline-block;
+    color: #fff;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 500;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    padding: 12px 32px;
+    align-items:center;
+  }
+
+  /*./Cover*/
+
+  /*Lots*/
+
+  .lots {
+    margin-bottom: 120px;
+  }
+
+  .lots_heading {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46.96px;
+    text-transform: uppercase;
+    padding-left: 63px;
+    padding-bottom: 27px;
+  }
+
+  .lots_card-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0 24px;
+    padding-bottom: 30px;
+  }
+
+  .lots_card-list-item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .card_type_film {
+    height: 100%;
+    position: relative;
+  }
+
+  .card_link {
+    height: 100%;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .card_title {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26.4px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    padding-top: 48px;
+  }
+
+  .card_text {
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    z-index: 1;
+    padding-right: 40px;
+    position: absolute;
+    bottom: 48px;
+  }
+
+  .card {
+    height: 596px;
+    width: 334px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .card_type_film {
+    background-image: url(/first-project/ono-tebe-nado-fd/images/card-lot-01.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+  }
+
+  .card_type_book {
+    background-image: url(/first-project/ono-tebe-nado-fd/images/card-lot-02.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+  }
+
+  .card_type_picture {
+    background-image: url(/first-project/ono-tebe-nado-fd/images/card-lot-03.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+  }
+
+  .lots_look-more-link {
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23.48px;
+    margin-left: 65px;
+  }
+
+  /*./Lots*/
+
+  /*About*/
+
+  .about {
+    width: 1052px;
+    height: 595px;
+    display: flex;
+    margin-bottom: 180px;
+  }
+
+  .about_logo {
+    display: flex;
+    justify-content: center;
+    margin-left: 24px;
+    margin-right: 25px;
+    width: 334px;
+    height: 596px;
+    padding-top: 35px;
+  }
+
+  .about_logo-background {
+    width: 240px;
+    height: 240px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+
+  .about_logo-image {
+    width: 148px;
+    height: 114px;
+  }
+
+  .about_column-right {
+   width: 693px;
+   height: 449px;
+   padding-top: 135px;
+  }
+
+  .about_title {
+    color: #000;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46.96px;
+    text-transform: uppercase;
+    padding-bottom: 100px;
+  }
+
+  .about_text {
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 24px;
+  }
+
+  .about_text-two {
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /*./About*/
+
+  /*Footer*/
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 379px);
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 82px;
+  }
+
+  .footer_address {
+    width: 264.57px;
+    height: 98px;
+    margin-right: 50px;
+  }
+
+  .footer_menu {
+    display: flex;
+    height: 64px;
+    padding-left: 48px;
+  }
+
+  .footer_menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    list-style-type: none;
+  }
+
+  .footer_menu-link {
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.13px;
+  }
+
+  .footer_menu-link_active {
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  .footer_social-list {
+    width: 240px;
+    height: 48px;
+    display: flex;
+    gap: 48px;
+    list-style-type: none;
+  }
+
+  .footer_social-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  /*./Footer*/
