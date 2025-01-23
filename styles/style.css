@@ -8,26 +8,17 @@
     margin-bottom: 96px;
     display: grid;
     grid-template-columns: 427px 334px 294px;
-    align-items:center;
-  }
-
-
-  .header_logo {
-    display: flex;
-  }
-
-  .header_logo-image {
-    width: 146.05px;
-    height: 104.84px;
+    align-items: center;
   }
 
   .header_links-list {
     display: flex;
-    gap: 32px;
+    gap: 31px;
   }
 
   .header_links-list-item {
     list-style-type: circle;
+    padding-left: 1px;
   }
 
   .header__links-list-item_no-bullit {
@@ -48,9 +39,17 @@
     border-bottom: none;
   }
 
+  .header_logo {
+    display: flex;
+  }
+
+  .header_logo-image {
+    width: 146.05px;
+    height: 104.84px;
+  }
+
   .header_address {
     width: 240px;
-    height: 98px;
   }
 
   .address_info {
@@ -60,6 +59,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24.3px;
+    font-style: normal;
   }
 
   .address_info_text {
@@ -67,15 +67,16 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24.3px;
+    font-style: normal;
   }
 
   /*Cover*/
 
   .cover {
-    height: 91vh;
-    background-image: url(/first-project/ono-tebe-nado-fd/images/cover.jpg);
+    min-height: 757px;
+    background-image: url(../images/cover.jpg);
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     position: relative;
     margin-bottom: 180px;
   }
@@ -90,47 +91,56 @@
 
   .cover_title {
     color: #fff;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 700;
     width: 100%;
     font-size: 100px;
-    line-height: 129px;
-    padding-top: 168px;
+    line-height: 127px;
+    padding-top: 160px;
     padding-left: 50px;
-    padding-right: 54px;
+    padding-right: 53px;
     word-spacing: 6px;
   }
 
   .aligned-text {
     display: block;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
   }
 
   .aligned-text_center {
     text-align: center;
+    padding-top: 7px;
+    padding-left: 3px;
   }
 
   .aligned-text_right {
     text-align: right;
+    padding-top: 9px;
   }
 
   .cover_description {
     color: #fff;
-    padding-left: 50px;
-    margin-top: 106px;
+    padding-left: 52px;
+    margin-top: 99px;
   }
 
   .cover_description-text {
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
     text-transform: uppercase;
     display: inline;
     word-spacing:18px;
-    padding-right: 106px;
+    padding-right: 103px;
+    position: relative;
+    z-index: 1;
   }
 
   .bet-button {
+    cursor: pointer;
     display: inline-block;
     color: #fff;
     background-color: transparent;
@@ -139,7 +149,9 @@
     border: 1px solid #fff;
     text-transform: uppercase;
     padding: 12px 32px;
-    align-items:center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
   }
 
   /*./Cover*/
@@ -163,10 +175,11 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
     gap: 25px;
     margin: 0 24px;
     padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .lots_card-list-item {
@@ -174,15 +187,38 @@
     padding: 0;
   }
 
-  .card_type_film {
-    height: 100%;
-    position: relative;
-  }
-
   .card_link {
     height: 100%;
     text-decoration: none;
     display: inline-block;
+  }
+
+  .card {
+    height: 100%;
+    min-height: 596px;
+    width: 334px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+  }
+
+  .card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+  }
+
+  .card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
   }
 
   .card_title {
@@ -195,7 +231,6 @@
     text-transform: uppercase;
     position: relative;
     z-index: 1;
-    padding-top: 48px;
   }
 
   .card_text {
@@ -203,38 +238,8 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    position: relative;
     z-index: 1;
-    padding-right: 40px;
-    position: absolute;
-    bottom: 48px;
-  }
-
-  .card {
-    height: 596px;
-    width: 334px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .card_type_film {
-    background-image: url(/first-project/ono-tebe-nado-fd/images/card-lot-01.jpg);
-    background-position: center;
-    background-size:cover;
-    position: relative;
-  }
-
-  .card_type_book {
-    background-image: url(/first-project/ono-tebe-nado-fd/images/card-lot-02.jpg);
-    background-position: center;
-    background-size:cover;
-    position: relative;
-  }
-
-  .card_type_picture {
-    background-image: url(/first-project/ono-tebe-nado-fd/images/card-lot-03.jpg);
-    background-position: center;
-    background-size:cover;
-    position: relative;
   }
 
   .lots_look-more-link {
@@ -251,10 +256,9 @@
   /*About*/
 
   .about {
-    width: 1052px;
-    height: 595px;
+    width: 1073px;
     display: flex;
-    margin-bottom: 180px;
+    margin-bottom: 158px;
   }
 
   .about_logo {
@@ -263,7 +267,6 @@
     margin-left: 24px;
     margin-right: 25px;
     width: 334px;
-    height: 596px;
     padding-top: 35px;
   }
 
@@ -274,7 +277,7 @@
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
   }
 
   .about_logo-image {
@@ -284,7 +287,6 @@
 
   .about_column-right {
    width: 693px;
-   height: 449px;
    padding-top: 135px;
   }
 
@@ -305,13 +307,6 @@
     padding-bottom: 24px;
   }
 
-  .about_text-two {
-    color: #000;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-  }
-
   /*./About*/
 
   /*Footer*/
@@ -327,20 +322,18 @@
 
   .footer_address {
     width: 264.57px;
-    height: 98px;
     margin-right: 50px;
   }
 
   .footer_menu {
     display: flex;
-    height: 64px;
     padding-left: 48px;
   }
 
   .footer_menu-list {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     list-style-type: none;
   }
 
@@ -359,7 +352,6 @@
 
   .footer_social-list {
     width: 240px;
-    height: 48px;
     display: flex;
     gap: 48px;
     list-style-type: none;
