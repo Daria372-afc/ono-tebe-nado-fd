@@ -172,8 +172,6 @@
   }
 
   .lots_card-list {
-    margin: 0;
-    padding: 0;
     list-style: none;
     gap: 25px;
     margin: 0 24px;
