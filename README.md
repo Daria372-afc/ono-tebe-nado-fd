@@ -1,1 +1,1 @@
-https://github.com/Daria372-afc/ono-tebe-nado-fd/tree/11251b7d0d9f077bee949a1fa7435c4388d4941c
+https://github.com/Daria372-afc/ono-tebe-nado-fd
